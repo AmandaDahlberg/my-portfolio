@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  margin: 10px;
+  font-family: "gotham", sans-serif;
+  font-weight: 300;
+}
+img {
+  max-width: 100%;
+}
+main {
+  margin: 0 50px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+}
+.intro {
+  padding: 20px;
+  margin: 50px 0 100px 0;
+  border: 2px solid #000000;
+}
+.h1,
+.h2 {
+  color: #000000;
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
+}
+.menu {
+  width: 200px;
+  padding: 20px;
+  margin: 50px 0 100px 0;
+  border: 2px solid #000000;
+}
+.menu-text {
+  color: #000000;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+.menu-text:hover {
+  color: #ffa198d9;
+}
+.container {
+  display: flex;
+  align-items: start;
+  padding: 20px 0;
+  margin: 100px 0;
+  height: 500px;
+  gap: 50px;
+}
+.first {
+  display: flex;
+  justify-content: start;
+  border-bottom: 2px solid #000000;
+}
+.text {
+  color: #000000;
+  font-size: 1.5rem;
+}
+.container a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #000000;
+}
+a:hover {
+  color: #ffa198d9;
+}
+.first img {
+  width: 300px;
+}
+.second {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2px solid #000000;
+}
+.second img {
+  height: 400px;
+}
+.left-2 img {
+  height: 300px;
+}
+.third {
+  display: flex;
+  justify-content: start;
+}
+.footer {
+  display: flex;
+  justify-content: end;
+  margin: 20px;
+  align-items: center;
+  border: 2px solid #000000;
+}
+.footer-text {
+  color: #000000;
+  font-family: gotham, sans-serif;
+  font-size: 1rem;
+  margin: 20px;
+}
+.footer div {
+  margin: 20px;
+}
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0 24 px;
+  }
+  .h1,
+  .h2 {
+    font-size: 1.5rem;
+  }
+  .header {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px;
+  }
+  .intro {
+    margin: 10px 0;
+  }
+  .menu {
+    margin: 0 0 20px 0;
+    padding: 10px;
+  }
+  .container {
+    justify-content: center;
+    margin: 10;
+  }
+  .first,
+  .third {
+    margin: 10px;
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 10px;
+    height: fit-content;
+  }
+  .second {
+    margin: 10px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: fit-content;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer-text {
+    margin: 10px;
+  }
+  .footer div {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  margin: 10px;
+  font-family: "gotham", sans-serif;
+  font-weight: 300;
+}
+main {
+  margin: 0px 50px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: start;
+}
+.intro {
+  padding: 20px;
+  margin: 50px 0 100px 0;
+  border: 2px solid #000000;
+}
+.h1,
+.h2 {
+  color: #000000;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+}
+.menu {
+  width: 200px;
+  padding: 20px;
+  margin: 50px 0 100px 0;
+  border: 2px solid #000000;
+}
+.menu-text {
+  color: #000000;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+.menu-text:hover {
+  color: #ffa198d9;
+}
