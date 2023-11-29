@@ -30,7 +30,7 @@ main {
   color: #000000;
   font-size: 3rem;
   padding: 10px;
-  text-align: center;
+  text-align: start;
   font-weight: 800;
 }
 .menu {
@@ -46,14 +46,12 @@ main {
   font-weight: 800;
 }
 .menu-text:hover {
-  color: #ffa198d9;
+  color: #583a30d9;
 }
 .container {
   display: flex;
   align-items: start;
-  padding: 20px 0;
-  margin: 100px 0;
-  height: 500px;
+  padding: 80px 0;
   gap: 50px;
 }
 .first {
@@ -71,7 +69,7 @@ main {
   color: #000000;
 }
 a:hover {
-  color: #ffa198d9;
+  color: #583a30d9;
 }
 .first img {
   width: 300px;
@@ -85,11 +83,13 @@ a:hover {
   height: 400px;
 }
 .left-2 img {
-  height: 300px;
+  width: 350px;
 }
 .third {
   display: flex;
   justify-content: start;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #000000;
 }
 .footer {
   display: flex;
@@ -108,52 +108,82 @@ a:hover {
 }
 @media screen and (max-width: 600px) {
   main {
-    margin: 0 24 px;
+    margin: 0 16px;
   }
   .h1,
   .h2 {
     font-size: 1.5rem;
+    text-align: center;
+    padding: 4px 0 4px 0;
   }
   .header {
     flex-direction: column;
+    justify-content: flex-start;
     gap: 0;
-    padding: 10px;
+    padding: 0;
+    margin: 16px;
   }
   .intro {
-    margin: 10px 0;
+    margin: 24px 0;
+    padding: 0;
+    width: 100%;
   }
   .menu {
-    margin: 0 0 20px 0;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 24px 0;
+    padding: 0;
+    width: 100%;
   }
   .container {
     justify-content: center;
-    margin: 10;
+    align-items: center;
+  }
+  .container a {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    align-self: flex-start;
   }
   .first,
   .third {
-    margin: 10px;
-    padding: 0;
+    margin: 16px 0;
+    padding: 20px 0;
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 10px;
+    gap: 0;
     height: fit-content;
   }
+  .left {
+    margin-bottom: 24px;
+  }
+  .left-2 {
+    margin-bottom: 24px;
+  }
   .second {
-    margin: 10px;
-    padding: 0;
+    margin: o;
+    padding: 20px 0;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 0;
     height: fit-content;
+  }
+  .right {
+    margin-bottom: 0px;
+  }
+  .third {
+    margin-bottom: 50px;
   }
   .footer {
     flex-direction: column;
+    margin: 16px;
+    align-items: end;
   }
   .footer-text {
-    margin: 10px;
+    padding: 8px 0;
+    margin: 0;
   }
   .footer div {
-    margin: 10px;
+    padding: 8px 0;
+    margin: 0;
   }
 }
